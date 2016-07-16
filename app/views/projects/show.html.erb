@@ -16,14 +16,18 @@
 </p>
 
 <p>
-  <strong>Price in cents:</strong>
-  <%= @project.price_in_cents %>
+  <strong>Price:</strong>
+  $<%= @project.formatted_price %>
 </p>
 
 <p>
   <strong>File:</strong>
   <%= @project.file %>
 </p>
+<p>
+  <strong>Date:</strong>
+  <%= @project.date %>
+</p>
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Edit Project', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
