@@ -25,9 +25,14 @@
   <%= @project.file %>
 </p>
 <p>
-  <strong>Date:</strong>
-  <%= @project.date %>
+  <strong>Start Date:</strong>
+  <%= @project.date_start %>
+</p>
+<p>
+  <strong>End Date:</strong>
+  <%= @project.date_end %>
 </p>
 
 <%= link_to 'Edit Project', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<%= link_to 'Back', projects_path %> |
+<%= link_to 'Home', root_path %>
